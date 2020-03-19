@@ -1,0 +1,89 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-03-19T06:49:10.373Z",
+        "before": [
+          {
+            "result": {
+              "duration": 12000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FirstCry_StepDef.FirstCry_StepDef.initialization()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Navigations to browser and check the respective links",
+        "description": "",
+        "id": "navigations-to-browser;navigations-to-browser-and-check-the-respective-links",
+        "after": [
+          {
+            "result": {
+              "duration": 2101000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FirstCry_StepDef.FirstCry_StepDef.closeBroser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 32119000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "launch the firstcry URL",
+            "match": {
+              "location": "FirstCry_StepDef.FirstCry_StepDef.launchBrowser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat FirstCry_StepDef.FirstCry_StepDef.validate_the_browser_launched_successfully(FirstCry_StepDef.java:66)\r\n\tat ✽.Validate the browser launched successfully(file:///C:/Users/suprava.sahu/workspace/Com_FirstCry/./src/test/java/FirstCry_Features/Navigation.feature:5)\r\n",
+              "duration": 11000000,
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "Validate the browser launched successfully",
+            "match": {
+              "location": "FirstCry_StepDef.FirstCry_StepDef.validate_the_browser_launched_successfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "Navigate to \"All Categories\" link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"All Categories\"",
+                  "offset": 12
+                }
+              ],
+              "location": "FirstCry_StepDef.FirstCry_StepDef.navigate_to_link(java.lang.String)"
+            },
+            "keyword": "When "
+          }
+        ]
+      }
+    ],
+    "name": "Navigations to Browser",
+    "description": "",
+    "id": "navigations-to-browser",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/FirstCry_Features/Navigation.feature",
+    "tags": []
+  }
+]
