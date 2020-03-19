@@ -9,7 +9,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(features = "./src/test/java/FirstCry_Features"
 					,glue={"FirstCry_StepDef"}
 					,plugin = { "pretty", "html:testOutput/cucumber.html","json:testOutput/cucumber.json" }
-					//,tags = "@UIAPI"
+					,tags = "@Home"
 					,monochrome = true
 					,dryRun = false )	
 public class FirstCry_Runners {

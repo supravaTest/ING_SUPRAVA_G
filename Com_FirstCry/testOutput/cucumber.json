@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-03-19T06:49:10.373Z",
+        "start_timestamp": "2020-03-19T10:40:16.858Z",
         "before": [
           {
             "result": {
-              "duration": 12000000,
+              "duration": 6000000,
               "status": "passed"
             },
             "match": {
@@ -19,23 +19,12 @@
         "name": "Navigations to browser and check the respective links",
         "description": "",
         "id": "navigations-to-browser;navigations-to-browser-and-check-the-respective-links",
-        "after": [
-          {
-            "result": {
-              "duration": 2101000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "FirstCry_StepDef.FirstCry_StepDef.closeBroser()"
-            }
-          }
-        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 32119000000,
+              "duration": 13465000000,
               "status": "passed"
             },
             "line": 4,
@@ -47,9 +36,8 @@
           },
           {
             "result": {
-              "error_message": "java.lang.NullPointerException\r\n\tat FirstCry_StepDef.FirstCry_StepDef.validate_the_browser_launched_successfully(FirstCry_StepDef.java:66)\r\n\tat ✽.Validate the browser launched successfully(file:///C:/Users/suprava.sahu/workspace/Com_FirstCry/./src/test/java/FirstCry_Features/Navigation.feature:5)\r\n",
-              "duration": 11000000,
-              "status": "failed"
+              "duration": 12000000,
+              "status": "passed"
             },
             "line": 5,
             "name": "Validate the browser launched successfully",
@@ -60,8 +48,8 @@
           },
           {
             "result": {
-              "duration": 1000000,
-              "status": "skipped"
+              "duration": 175000000,
+              "status": "passed"
             },
             "line": 6,
             "name": "Navigate to \"All Categories\" link",
@@ -75,6 +63,41 @@
               "location": "FirstCry_StepDef.FirstCry_StepDef.navigate_to_link(java.lang.String)"
             },
             "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 128000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "All the categories should be visible",
+            "match": {
+              "location": "FirstCry_StepDef.FirstCry_StepDef.all_the_categories_should_be_visible()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User should select the preferred category \"GIRL FASHION\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GIRL FASHION\"",
+                  "offset": 42
+                }
+              ],
+              "location": "FirstCry_StepDef.FirstCry_StepDef.user_should_select_the_preferred_category(java.lang.String)"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Home"
           }
         ]
       }

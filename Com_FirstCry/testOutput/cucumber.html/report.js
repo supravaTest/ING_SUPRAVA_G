@@ -7,7 +7,12 @@ formatter.feature({
 formatter.scenario({
   "name": "Navigations to browser and check the respective links",
   "description": "",
-  "keyword": "Scenario"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@Home"
+    }
+  ]
 });
 formatter.before({
   "status": "passed"
@@ -30,8 +35,7 @@ formatter.match({
   "location": "FirstCry_StepDef.FirstCry_StepDef.validate_the_browser_launched_successfully()"
 });
 formatter.result({
-  "error_message": "java.lang.NullPointerException\r\n\tat FirstCry_StepDef.FirstCry_StepDef.validate_the_browser_launched_successfully(FirstCry_StepDef.java:66)\r\n\tat ✽.Validate the browser launched successfully(file:///C:/Users/suprava.sahu/workspace/Com_FirstCry/./src/test/java/FirstCry_Features/Navigation.feature:5)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "Navigate to \"All Categories\" link",
@@ -41,9 +45,26 @@ formatter.match({
   "location": "FirstCry_StepDef.FirstCry_StepDef.navigate_to_link(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
-formatter.after({
+formatter.step({
+  "name": "All the categories should be visible",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "FirstCry_StepDef.FirstCry_StepDef.all_the_categories_should_be_visible()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should select the preferred category \"GIRL FASHION\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "FirstCry_StepDef.FirstCry_StepDef.user_should_select_the_preferred_category(java.lang.String)"
+});
+formatter.result({
   "status": "passed"
 });
 });
